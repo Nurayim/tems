@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- <div id="orders"></div>
+
+    <div class="item">Milk 1 l.<span class="qty">x 2</span></div>
+    <div class="item">Cola 1.5 l. <span class="qty">x 1</span></div>
+    <div class="item">Bread<span class="qty">x 2</span></div>
+    <div class="item">Cheese<span class="qty">x 1</span></div>
+    <div class="item">Chocolate bar<span class="qty">x 3</span></div> -->
+
+        <div class="orders"></div>
+
+        <script>
+            const conteiner = document.getElementById('orders');
+            const items = [
+                {name:'burger', amount: 12,},
+                {name:'cola', amount: 12,},
+                {name:'fri', amount: 12,},
+            ];
+            for(let i = 0; i < items.length; i++){
+                const item = items[i];
+                const element = createOrderDiv(item.name,item.amount);
+                conteiner.append(element)
+
+            }
+        </script>
+    
+
+
+
+   
+    
+    
+    
+</body>
+</html>
+
